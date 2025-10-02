@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="NoMoney.exe"/>
+    <OBJFILES value="NoMoney.obj BancoDM_Unit.obj ConexaoDM_Unit.obj Login_Unit.obj 
+      Principal_Unit.obj SelecionarMes_Unit.obj DetalhesConta_Unit.obj 
+      About_Unit.obj Splash_Unit.obj Cheque_Unit.obj CadBanco_Unit.obj 
+      EmissaoRelatorio_Unit.obj RelatorioFinanceiro_Unit.obj 
+      NovoTipoConta_Unit.obj ContasDM_Unit.obj RelatorioFinanceiroDM_Unit.obj"/>
+    <RESFILES value="NoMoney.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) BancoDM_Unit.dfm ConexaoDM_Unit.dfm Login_Unit.dfm 
+      Principal_Unit.dfm SelecionarMes_Unit.dfm DetalhesConta_Unit.dfm 
+      About_Unit.dfm Splash_Unit.dfm Cheque_Unit.dfm CadBanco_Unit.dfm 
+      EmissaoRelatorio_Unit.dfm RelatorioFinanceiro_Unit.dfm 
+      NovoTipoConta_Unit.dfm ContasDM_Unit.dfm RelatorioFinanceiroDM_Unit.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="Rave50VCL.lib bdertl.lib vclx.lib qrpt60.lib vcldb.lib dbexpress.lib 
+      dsnap.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib dsnap.lib dbexpress.lib vcldb.lib qrpt60.lib 
+      vclx.lib bdertl.lib Rave50VCL.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt60.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi webdsnap.bpi bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi 
+      dbexpress.bpi dbxcds.bpi indy.bpi bcb2kaxserver.bpi qrexports.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="NoMoney.cpp"/>
+    <INCLUDEPATH value="C:\Rave5\C6;&quot;NoMoney Pinky&quot;;&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="C:\Rave5\C6;&quot;NoMoney Pinky&quot;;&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IC:\Rave5\C6 -I&quot;NoMoney Pinky&quot; 
+      -I&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="NoMoney.res" FORMNAME="" UNITNAME="NoMoney.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NoMoney.cpp" FORMNAME="" UNITNAME="NoMoney" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BancoDM_Unit.cpp" FORMNAME="Banco_DataModule" UNITNAME="BancoDM_Unit" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConexaoDM_Unit.cpp" FORMNAME="Conexao_DataModule" UNITNAME="ConexaoDM_Unit" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="Login_Unit.cpp" FORMNAME="Login_Dialog" UNITNAME="Login_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Principal_Unit.cpp" FORMNAME="Principal_Form" UNITNAME="Principal_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelecionarMes_Unit.cpp" FORMNAME="SelecionarMes_Dialog" UNITNAME="SelecionarMes_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DetalhesConta_Unit.cpp" FORMNAME="DetalhesConta_Dialog" UNITNAME="DetalhesConta_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About_Unit.cpp" FORMNAME="AboutBox" UNITNAME="About_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Splash_Unit.cpp" FORMNAME="Splash_Form" UNITNAME="Splash_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Cheque_Unit.cpp" FORMNAME="CadCheque_Dialog" UNITNAME="Cheque_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CadBanco_Unit.cpp" FORMNAME="CadBanco_Dialog" UNITNAME="CadBanco_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EmissaoRelatorio_Unit.cpp" FORMNAME="EmissaoRelatorio_Dialog" UNITNAME="EmissaoRelatorio_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RelatorioFinanceiro_Unit.cpp" FORMNAME="RelatorioFinanceiro_Form" UNITNAME="RelatorioFinanceiro_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NovoTipoConta_Unit.cpp" FORMNAME="NovoTipoConta_Form" UNITNAME="NovoTipoConta_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ContasDM_Unit.cpp" FORMNAME="Contas_DataModule" UNITNAME="ContasDM_Unit" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="RelatorioFinanceiroDM_Unit.cpp" FORMNAME="RelatorioFinanceiro_DataModule" UNITNAME="RelatorioFinanceiroDM_Unit" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=1
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1046
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Rodrigo Corporation
+FileDescription=
+FileVersion=1.0.0.1
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=NoMoney
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\arquivos de programas\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+C:\Arquivos de programas\Borland\CBuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
+c:\arquivos de programas\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=C:\Rave5\C6;NoMoney Pinky;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=C:\Rave5\C6;NoMoney Pinky;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

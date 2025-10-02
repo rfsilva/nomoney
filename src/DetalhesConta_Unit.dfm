@@ -1,0 +1,205 @@
+object DetalhesConta_Dialog: TDetalhesConta_Dialog
+  Left = 241
+  Top = 203
+  Width = 494
+  Height = 198
+  Caption = 'Cadastro de Conta'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 10
+    Top = 8
+    Width = 464
+    Height = 145
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Top = 15
+      Width = 70
+      Height = 13
+      Caption = 'Tipo de Conta:'
+    end
+    object Label2: TLabel
+      Left = 167
+      Top = 15
+      Width = 100
+      Height = 13
+      Caption = 'Descri'#231#227'o (opcional):'
+    end
+    object Label3: TLabel
+      Left = 8
+      Top = 63
+      Width = 27
+      Height = 13
+      Caption = 'Valor:'
+    end
+    object Moeda_Label: TLabel
+      Left = 88
+      Top = 63
+      Width = 36
+      Height = 13
+      Caption = 'Moeda:'
+    end
+    object Label4: TLabel
+      Left = 200
+      Top = 63
+      Width = 133
+      Height = 13
+      Caption = 'Vencimento: (dd/mm/aaaa):'
+    end
+    object Label5: TLabel
+      Left = 344
+      Top = 63
+      Width = 79
+      Height = 13
+      Caption = 'Status da Conta:'
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 139
+      Top = 30
+      Width = 23
+      Height = 22
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000130B0000130B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0033333333B333
+        333B33FF33337F3333F73BB3777BB7777BB3377FFFF77FFFF77333B000000000
+        0B3333777777777777333330FFFFFFFF07333337F33333337F333330FFFFFFFF
+        07333337F33333337F333330FFFFFFFF07333337F33333337F333330FFFFFFFF
+        07333FF7F33333337FFFBBB0FFFFFFFF0BB37777F3333333777F3BB0FFFFFFFF
+        0BBB3777F3333FFF77773330FFFF000003333337F333777773333330FFFF0FF0
+        33333337F3337F37F3333330FFFF0F0B33333337F3337F77FF333330FFFF003B
+        B3333337FFFF77377FF333B000000333BB33337777777F3377FF3BB3333BB333
+        3BB33773333773333773B333333B3333333B7333333733333337}
+      NumGlyphs = 2
+      OnClick = SpeedButton1Click
+    end
+    object BitBtn1: TBitBtn
+      Left = 353
+      Top = 109
+      Width = 100
+      Height = 25
+      Cancel = True
+      Caption = 'Cancelar'
+      TabOrder = 8
+      OnClick = BitBtn1Click
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        333333333333333333333333000033338833333333333333333F333333333333
+        0000333911833333983333333388F333333F3333000033391118333911833333
+        38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+        911118111118333338F3338F833338F3000033333911111111833333338F3338
+        3333F8330000333333911111183333333338F333333F83330000333333311111
+        8333333333338F3333383333000033333339111183333333333338F333833333
+        00003333339111118333333333333833338F3333000033333911181118333333
+        33338333338F333300003333911183911183333333383338F338F33300003333
+        9118333911183333338F33838F338F33000033333913333391113333338FF833
+        38F338F300003333333333333919333333388333338FFF830000333333333333
+        3333333333333333333888330000333333333333333333333333333333333333
+        0000}
+      NumGlyphs = 2
+    end
+    object BitBtn2: TBitBtn
+      Left = 247
+      Top = 109
+      Width = 100
+      Height = 25
+      Caption = 'OK'
+      Default = True
+      TabOrder = 7
+      OnClick = BitBtn2Click
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333330000333333333333333333333333F33333333333
+        00003333344333333333333333388F3333333333000033334224333333333333
+        338338F3333333330000333422224333333333333833338F3333333300003342
+        222224333333333383333338F3333333000034222A22224333333338F338F333
+        8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+        33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+        0000333333333A222433333333333338F338F33300003333333333A222433333
+        333333338F338F33000033333333333A222433333333333338F338F300003333
+        33333333A222433333333333338F338F00003333333333333A22433333333333
+        3338F38F000033333333333333A223333333333333338F830000333333333333
+        333A333333333333333338330000333333333333333333333333333333333333
+        0000}
+      NumGlyphs = 2
+    end
+    object Descricao_DBEdit: TDBEdit
+      Left = 167
+      Top = 31
+      Width = 286
+      Height = 21
+      DataField = 'DESCRICAO'
+      DataSource = Banco_DataModule.Conta_DataSource
+      TabOrder = 1
+    end
+    object Valor_DBEdit: TDBEdit
+      Left = 8
+      Top = 79
+      Width = 73
+      Height = 21
+      DataField = 'VALOR'
+      DataSource = Banco_DataModule.Conta_DataSource
+      TabOrder = 2
+    end
+    object Vencimento_DBEdit: TDBEdit
+      Left = 199
+      Top = 79
+      Width = 138
+      Height = 21
+      DataField = 'VENCIMENTO'
+      DataSource = Banco_DataModule.Conta_DataSource
+      TabOrder = 4
+      OnClick = Vencimento_DBEditClick
+    end
+    object TipoConta_ComboBox: TComboBox
+      Left = 8
+      Top = 31
+      Width = 126
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 0
+      OnSelect = TipoConta_ComboBoxSelect
+    end
+    object Moeda_ComboBox: TComboBox
+      Left = 88
+      Top = 79
+      Width = 105
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 3
+    end
+    object Estender_CheckBox: TCheckBox
+      Left = 8
+      Top = 114
+      Width = 233
+      Height = 17
+      Caption = 'Estender esta conta para at'#233' o fim deste ano'
+      TabOrder = 6
+    end
+    object Status_ComboBox: TComboBox
+      Left = 344
+      Top = 79
+      Width = 110
+      Height = 21
+      ItemHeight = 13
+      TabOrder = 5
+    end
+  end
+end
