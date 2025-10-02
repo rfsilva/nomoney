@@ -1,0 +1,219 @@
+//---------------------------------------------------------------------------
+
+#ifndef TabelasDM_UnitH
+#define TabelasDM_UnitH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <DB.hpp>
+#include <DBClient.hpp>
+#include <FMTBcd.hpp>
+#include <Provider.hpp>
+#include <SqlExpr.hpp>
+#include "ConexaoDM_Unit.h"
+//---------------------------------------------------------------------------
+class TTabelas_DataModule : public TDataModule
+{
+__published:	// IDE-managed Components
+        TSQLTable *Administrador_SQLTable;
+        TIntegerField *Administrador_SQLTableID;
+        TStringField *Administrador_SQLTableLOGIN;
+        TStringField *Administrador_SQLTableSENHA;
+        TStringField *Administrador_SQLTableNOME;
+        TDataSetProvider *Administrador_DataSetProvider;
+        TClientDataSet *Administrador_ClientDataSet;
+        TIntegerField *Administrador_ClientDataSetID;
+        TStringField *Administrador_ClientDataSetLOGIN;
+        TStringField *Administrador_ClientDataSetSENHA;
+        TStringField *Administrador_ClientDataSetNOME;
+        TSQLTable *Banco_SQLTable;
+        TIntegerField *Banco_SQLTableCODIGO;
+        TStringField *Banco_SQLTableNOME;
+        TDataSetProvider *Banco_DataSetProvider;
+        TClientDataSet *Banco_ClientDataSet;
+        TStringField *Banco_ClientDataSetNOME;
+        TIntegerField *Banco_ClientDataSetCODIGO;
+        TSQLTable *Cargo_SQLTable;
+        TIntegerField *Cargo_SQLTableCODIGO;
+        TStringField *Cargo_SQLTableDESCRICAO;
+        TDataSetProvider *Cargo_DataSetProvider;
+        TClientDataSet *Cargo_ClientDataSet;
+        TIntegerField *Cargo_ClientDataSetCODIGO;
+        TStringField *Cargo_ClientDataSetDESCRICAO;
+        TSQLTable *Cheque_SQLTable;
+        TIntegerField *Cheque_SQLTableID;
+        TIntegerField *Cheque_SQLTableNUMERO;
+        TIntegerField *Cheque_SQLTableBANCO;
+        TStringField *Cheque_SQLTableAGENCIA;
+        TStringField *Cheque_SQLTableCONTA;
+        TIntegerField *Cheque_SQLTableCODCONTA;
+        TDataSetProvider *Cheque_DataSetProvider;
+        TClientDataSet *Cheque_ClientDataSet;
+        TIntegerField *Cheque_ClientDataSetID;
+        TIntegerField *Cheque_ClientDataSetNUMERO;
+        TIntegerField *Cheque_ClientDataSetBANCO;
+        TStringField *Cheque_ClientDataSetAGENCIA;
+        TStringField *Cheque_ClientDataSetCONTA;
+        TIntegerField *Cheque_ClientDataSetCODCONTA;
+        TSQLTable *Conta_SQLTable;
+        TIntegerField *Conta_SQLTableID;
+        TIntegerField *Conta_SQLTableCODIGO;
+        TIntegerField *Conta_SQLTableMOEDA;
+        TSQLTimeStampField *Conta_SQLTableVENCIMENTO;
+        TIntegerField *Conta_SQLTableTIPOCONTA;
+        TIntegerField *Conta_SQLTableSITUACAO;
+        TStringField *Conta_SQLTableDESCRICAO;
+        TFloatField *Conta_SQLTableVALOR;
+        TDataSetProvider *Conta_DataSetProvider;
+        TClientDataSet *Conta_ClientDataSet;
+        TIntegerField *Conta_ClientDataSetID;
+        TIntegerField *Conta_ClientDataSetCODIGO;
+        TIntegerField *Conta_ClientDataSetMOEDA;
+        TSQLTimeStampField *Conta_ClientDataSetVENCIMENTO;
+        TIntegerField *Conta_ClientDataSetTIPOCONTA;
+        TIntegerField *Conta_ClientDataSetSITUACAO;
+        TStringField *Conta_ClientDataSetDESCRICAO;
+        TFloatField *Conta_ClientDataSetVALOR;
+        TSQLTable *Continente_SQLTable;
+        TIntegerField *Continente_SQLTableCODIGO;
+        TStringField *Continente_SQLTableNOME;
+        TDataSetProvider *Continente_DataSetProvider;
+        TClientDataSet *Continente_ClientDataSet;
+        TIntegerField *Continente_ClientDataSetCODIGO;
+        TStringField *Continente_ClientDataSetNOME;
+        TSQLTable *Endereco_SQLTable;
+        TIntegerField *Endereco_SQLTableID;
+        TIntegerField *Endereco_SQLTableTIPO;
+        TStringField *Endereco_SQLTableENDERECO;
+        TIntegerField *Endereco_SQLTableNUMERO;
+        TStringField *Endereco_SQLTableBAIRRO;
+        TStringField *Endereco_SQLTableCIDADE;
+        TIntegerField *Endereco_SQLTableESTADO;
+        TStringField *Endereco_SQLTableCEP;
+        TIntegerField *Endereco_SQLTablePAIS;
+        TDataSetProvider *Endereco_DataSetProvider;
+        TClientDataSet *Endereco_ClientDataSet;
+        TIntegerField *Endereco_ClientDataSetID;
+        TIntegerField *Endereco_ClientDataSetTIPO;
+        TStringField *Endereco_ClientDataSetENDERECO;
+        TIntegerField *Endereco_ClientDataSetNUMERO;
+        TStringField *Endereco_ClientDataSetBAIRRO;
+        TStringField *Endereco_ClientDataSetCIDADE;
+        TIntegerField *Endereco_ClientDataSetESTADO;
+        TStringField *Endereco_ClientDataSetCEP;
+        TIntegerField *Endereco_ClientDataSetPAIS;
+        TSQLTable *Estado_SQLTable;
+        TIntegerField *Estado_SQLTableCODIGO;
+        TStringField *Estado_SQLTableSIGLA;
+        TStringField *Estado_SQLTableNOME;
+        TDataSetProvider *Estado_DataSetProvider;
+        TClientDataSet *Estado_ClientDataSet;
+        TIntegerField *Estado_ClientDataSetCODIGO;
+        TStringField *Estado_ClientDataSetSIGLA;
+        TStringField *Estado_ClientDataSetNOME;
+        TSQLTable *Login_SQLTable;
+        TStringField *Login_SQLTableLOGIN;
+        TStringField *Login_SQLTableSENHA;
+        TIntegerField *Login_SQLTableID;
+        TDataSetProvider *Login_DataSetProvider;
+        TClientDataSet *Login_ClientDataSet;
+        TStringField *Login_ClientDataSetLOGIN;
+        TStringField *Login_ClientDataSetSENHA;
+        TIntegerField *Login_ClientDataSetID;
+        TSQLTable *Moeda_SQLTable;
+        TIntegerField *Moeda_SQLTableCODIGO;
+        TStringField *Moeda_SQLTableSIGLA;
+        TStringField *Moeda_SQLTableNOME;
+        TFloatField *Moeda_SQLTableCONVERSAO;
+        TDataSetProvider *Moeda_DataSetProvider;
+        TClientDataSet *Moeda_ClientDataSet;
+        TIntegerField *Moeda_ClientDataSetCODIGO;
+        TStringField *Moeda_ClientDataSetSIGLA;
+        TStringField *Moeda_ClientDataSetNOME;
+        TFloatField *Moeda_ClientDataSetCONVERSAO;
+        TSQLTable *Pais_SQLTable;
+        TIntegerField *Pais_SQLTableCODIGO;
+        TStringField *Pais_SQLTableNOME;
+        TIntegerField *Pais_SQLTableCONTINENTE;
+        TDataSetProvider *Pais_DataSetProvider;
+        TClientDataSet *Pais_ClientDataSet;
+        TIntegerField *Pais_ClientDataSetCODIGO;
+        TStringField *Pais_ClientDataSetNOME;
+        TIntegerField *Pais_ClientDataSetCONTINENTE;
+        TSQLTable *Pessoa_SQLTable;
+        TIntegerField *Pessoa_SQLTableID;
+        TStringField *Pessoa_SQLTablePRIMEIRO_NOME;
+        TStringField *Pessoa_SQLTableSOBRENOME;
+        TStringField *Pessoa_SQLTableAPELIDO;
+        TSQLTimeStampField *Pessoa_SQLTableNASCIMENTO;
+        TStringField *Pessoa_SQLTableSEXO;
+        TIntegerField *Pessoa_SQLTableCARGO;
+        TFloatField *Pessoa_SQLTableSALARIO;
+        TIntegerField *Pessoa_SQLTableMOEDA;
+        TIntegerField *Pessoa_SQLTableDIA_PAGTO;
+        TDataSetProvider *Pessoa_DataSetProvider;
+        TClientDataSet *Pessoa_ClientDataSet;
+        TIntegerField *Pessoa_ClientDataSetID;
+        TStringField *Pessoa_ClientDataSetPRIMEIRO_NOME;
+        TStringField *Pessoa_ClientDataSetSOBRENOME;
+        TStringField *Pessoa_ClientDataSetAPELIDO;
+        TSQLTimeStampField *Pessoa_ClientDataSetNASCIMENTO;
+        TStringField *Pessoa_ClientDataSetSEXO;
+        TIntegerField *Pessoa_ClientDataSetCARGO;
+        TFloatField *Pessoa_ClientDataSetSALARIO;
+        TIntegerField *Pessoa_ClientDataSetMOEDA;
+        TIntegerField *Pessoa_ClientDataSetDIA_PAGTO;
+        TSQLTable *Telefone_SQLTable;
+        TIntegerField *Telefone_SQLTableID;
+        TIntegerField *Telefone_SQLTableDDD;
+        TStringField *Telefone_SQLTableTELEFONE;
+        TDataSetProvider *Telefone_DataSetProvider;
+        TClientDataSet *Telefone_ClientDataSet;
+        TIntegerField *Telefone_ClientDataSetID;
+        TIntegerField *Telefone_ClientDataSetDDD;
+        TStringField *Telefone_ClientDataSetTELEFONE;
+        TSQLTable *TipoConta_SQLTable;
+        TIntegerField *TipoConta_SQLTableCODIGO;
+        TStringField *TipoConta_SQLTableTIPO;
+        TStringField *TipoConta_SQLTableDESCRICAO;
+        TStringField *TipoConta_SQLTableSITUACAO;
+        TDataSetProvider *TipoConta_DataSetProvider;
+        TClientDataSet *TipoConta_ClientDataSet;
+        TIntegerField *TipoConta_ClientDataSetCODIGO;
+        TStringField *TipoConta_ClientDataSetTIPO;
+        TStringField *TipoConta_ClientDataSetDESCRICAO;
+        TStringField *TipoConta_ClientDataSetSITUACAO;
+        TSQLTable *TipoLocalizacao_SQLTable;
+        TIntegerField *TipoLocalizacao_SQLTableCODIGO;
+        TStringField *TipoLocalizacao_SQLTableNOME;
+        TStringField *TipoLocalizacao_SQLTableSIGLA;
+        TDataSetProvider *TipoLocalizacao_DataSetProvider;
+        TClientDataSet *TipoLocalizacao_ClientDataSet;
+        TIntegerField *TipoLocalizacao_ClientDataSetCODIGO;
+        TStringField *TipoLocalizacao_ClientDataSetNOME;
+        TStringField *TipoLocalizacao_ClientDataSetSIGLA;
+        TSQLTable *Mes_SQLTable;
+        TIntegerField *Mes_SQLTableMES;
+        TIntegerField *Mes_SQLTableANO;
+        TIntegerField *Mes_SQLTableUSUARIO;
+        TFloatField *Mes_SQLTableSALDO;
+        TStringField *Mes_SQLTableTIPO;
+        TDataSetProvider *Mes_DataSetProvider;
+        TClientDataSet *Mes_ClientDataSet;
+        TIntegerField *Mes_ClientDataSetMES;
+        TIntegerField *Mes_ClientDataSetANO;
+        TIntegerField *Mes_ClientDataSetUSUARIO;
+        TFloatField *Mes_ClientDataSetSALDO;
+        TStringField *Mes_ClientDataSetTIPO;
+        void __fastcall DataModuleCreate(TObject *Sender);
+        void __fastcall DataModuleDestroy(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+        __fastcall TTabelas_DataModule(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TTabelas_DataModule *Tabelas_DataModule;
+//---------------------------------------------------------------------------
+#endif

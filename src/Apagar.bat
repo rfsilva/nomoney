@@ -1,0 +1,10 @@
+@echo off
+del *.~*
+del *.tds
+del *.obj
+del *.db
+del *.ilc
+del *.ild
+del *.ilf
+del *.ils
+@echo on

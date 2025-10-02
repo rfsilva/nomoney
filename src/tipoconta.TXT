@@ -1,0 +1,54 @@
+CODIGO    TIPO                 DESCRICAO                                                        SITUACAO    CATEGORIA    
+======    =================    =============================================================    ========    =========    
+36        ROUPAS                                                                                D           2            
+37        CONVÊNIO                                                                              D           2            
+38        RAÇÃO                                                                                 D           2            
+39        POUPANÇA                                                                              D           2            
+40        SINDICATO                                                                             D           2            
+41        FINANCIAMENTO IM                                                                      D           2            
+42        TV A CABO                                                                             D           2            
+43        CARTÃO DE CRÉDIT                                                                      D           2            
+44        CONTADOR                                                                              D           2            
+45        SERVIÇOS                                                                              D           2            
+46        CONSÓRCIO                                                                             D           2            
+47        VEÍCULO                                                                               D           2            
+48        EMPREGADA                                                                             D           2            
+49        CONTEMPL. CONSÓR                                                                      C           2            
+50        RESGATE POUPANÇA                                                                      C           2            
+51        IMÓVEL                                                                                D           2            
+52        IMPOSTO                                                                               D           2            
+53        LEGADO POSITIVO                                                                       C           2            
+1         TELEFONE             CONTA DE TELEFONE                                                D           1            
+2         ÁGUA                 CONTA DE ÁGUA                                                    D           1            
+3         LUZ                  CONTA DE LUZ                                                     D           1            
+4         ALUGUEL              ALUGUEL DA RESIDÊNCIA                                            D           1            
+5         IPTU                 IMPOSTO PREDIAL SOBRE TERRENOS URBANOS                           D           1            
+6         IPVA                 IMPOSTO PREDIAL SOBRE VEÍCULOS AUTOMOTORES                       D           1            
+7         SEGURO               SEGURO                                                           D           1            
+8         PROVEDOR             PROVEDOR DE ACESSO À INTERNET                                    D           1            
+9         CONDOMÍNIO           VALOR DO CONDOMÍNIO                                              D           1            
+10        VIAGEM               DESPESA DE VIAGEM IDA/VOLTA                                      D           1            
+11        DIVERSOS             CONTAS DIVERSAS                                                  D           1            
+12        ALIMENTAÇÃO          DESPESA DE ALIMENTAÇÃO                                           D           1            
+13        REMÉDIO              DESPESA COM REMÉDIO                                              D           1            
+14        ACADEMIA             MENSALIDADE DA ACADEMIA                                          D           1            
+15        MASCOTE              DESPESA COM ANIMAIS DE ESTIMAÇÃO                                 D           1            
+16        COMBUSTÍVEL          GASTOS COM COMBUSTÍVEL                                           D           1            
+17        FACULDADE            MENSALIDADE DA FACULDADE                                         D           1            
+18        CONGRESSO            CONGRESSO/SEMINÁRIO/SIMPÓSIO                                     D           1            
+19        CHEQUE               CHEQUE PASSADO                                                   D           1            
+20        SUPERMERCADO         GASTOS EM SUPERMERCADO                                           D           1            
+21        TRANSPORTE           GASTOS COM TRANSPORTE                                            D           1            
+22        SAQUE                SAQUE                                                            D           1            
+23        SALÁRIO              SALÁRIO DO MÊS                                                   C           1            
+24        DEPÓSITO             DEPÓSITO                                                         C           1            
+25        BANCO                COBERTURA DO LIMITE                                              D           1            
+26        MICROCOMPUTADOR      DESPESAS COM COMPUTADOR                                          D           1            
+27        GÁS                  DESPESA COM GÁS                                                  D           1            
+28        EMPRÉSTIMO           DINHEIRO PEGO EMPRESTADO                                         D           1            
+29        COMPRA PARCELADA     GASTO COM COMPRAS PARCELADO                                      D           1            
+30        COMPRA TOTAL         GASTO COM COMPRAS PAGO INTEGRAL                                  D           1            
+31        PRESENTE PARC.       GASTO COM PRESENTE PARCELADO                                     D           1            
+32        PRESENTE TOTAL       GASTO COM PRESENTE PAGO INTEGRAL                                 D           1            
+33        CERVEJA              GASTOS COM CERVEJA                                               D           1            
+34        CINEMA               CINEMA                                                           D           1            
